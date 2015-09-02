@@ -1,7 +1,82 @@
 <!DOCTYPE html>
+<!-- VFS INDEX - Battleships -->
+<!-- Copyright 2014 Vancouver Film School, all rights reserved -->
+
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+	<head>
+		<title>Battleships</title>
+		<link rel="stylesheet" type="text/css" href="css/Reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+		<script src="buzz/buzz.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		
+	</head>
+
+	<body>
+		
+		<div id="welcome-screen">
+		   
+		   <div id="battleships"><h1>BATTLESHIPS</h1></div>
+		   
+		   <div id="start-btn"> START GAME </div>
+		
+		</div>
+		
+		<div id="game" class="hidden">
+			
+			<section id="game-board">
+				
+				<table id="game-map"><!-- dynamic content --></table>
+			
+			</section>
+			
+			<section id="game-controls">
+			     
+			     <div id="counter"></div>
+				 
+				 <table id="ships-feedback"></table>
+				
+				 <div id="battleships2"><p>BATTLESHIPS</p></div>
+			
+			</section>
+		</div>
+		
+		<div id="end-screen" class="hidden">
+		   
+		   <div id="outcome"></div>
+		   
+		   <div id="play-again">
+		       
+		       <p>Play Again</p>   
+	       
+	       </div>
+		
+		</div>
+		
+			<footer id="bottom">
+			    
+			    <div id="About"> 
+			      <p>2014 Copyright to VFS and Andreia Gonçalves</p>
+			    </div>
+			
+			</footer>
+			
+			<section id="scripts">
+			    <script src="js/sound.js"></script>
+				<script src="js/ship.js"></script>
+				<script src="js/fleet.js"></script>
+				<script src="js/map.js"></script>
+				<script src="js/PlaceShips.js"></script>
+				<script src="js/interface.js"></script>
+				<script src="js/game.js"></script>
+			</section>
+		 
+			<script>
+	        $(document).ready(function() {
+	            game.init();  
+	        });
+	        	        
+			</script>
+	
+	</body>
 </html>
