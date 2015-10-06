@@ -1,0 +1,46 @@
+body
+{
+  margin: 0px 0px;
+  background-color: #f3f5f6;
+}
+
+nav ul
+{
+	float: right;
+}
+
+.slide.open #links
+{
+  float: left;
+}
+
+.header-section
+{
+  background-image: url("../img/bg_placeholder.jpg");
+  background-size: cover;
+  background-blend-mode: multiply;
+  text-align: center;
+  background-color: #f3f5f6;
+}
+
+.header
+{
+  height: 100vh;
+}
+
+.header h1
+{
+  position: absolute;
+  top: 50%;
+	color: #9aa6af;
+	text-align: center;
+  font-size: 3rem;
+	line-height: 60px;
+	font-weight: bold;
+  width: 100%;
+}
+
+.body-section
+{
+  background-color: #FFF;
+}

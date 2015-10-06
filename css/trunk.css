@@ -1,5 +1,4 @@
 body {
-	background-color: #000;
 
 	font: 12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	color: #9aa6af;
@@ -30,17 +29,27 @@ a {text-decoration: none;}
 }
 
 header {
-	height: 60px;
-	position: relative;
-	background-color: #f3f5f6;
+/*	height: 60px;*/
+	position: absolute;
+	width: 100vw;
+
 }
-header h1 {
+
+nav h1 {
+	float: left;
 	color: #9aa6af;
 	text-align: left;
 	font-size: 27px;
 	line-height: 60px;
 	font-weight: bold;
 	padding-left: 20px;
+}
+
+/*This header only shows in small res*/
+header h1
+{
+	visibility: hidden;
+	display: none;
 }
 
 .burger {
@@ -62,35 +71,34 @@ header h1 {
 .burger.open li {background-color: #d9dde1;}
 
 nav {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	right: 5px;
+	height: 4rem;
+	background-color: #f3f5f6;
+	width: 100vw;
 }
+
+
+
 nav li {
 	float: left;
-
 	display: inline-block;
 }
-nav li a {
+#links li a {
 	font-size: 11px;
 	color: #9aa6af;
 	padding: 24px 15px;
-
 	display: block;
 }
-nav li a:hover {color: #000;}
-
-
+#links li a:hover {color: #000;}
 
 
 /*  Removable CSS  */
-
-.header-section,
 .body-section,
 .footer-section
 {padding: 20px;}
 
-.header-section {background-color: #ffffff;}
 .body-section {background-color: #f4f5f6;}
 .footer-section {background-color: #dadee1;}
 .placefiller {
@@ -98,7 +106,6 @@ nav li a:hover {color: #000;}
 	font-size: 20px;
 	border: 1px dashed rgba(190, 196, 202, 0.5);
 }
-.header-section .placefiller {line-height: 300px;}
 .body-section .placefiller {line-height: 900px;}
 .footer-section .placefiller {
 	line-height: 200px;
@@ -128,10 +135,15 @@ header {
 	transform: translate3d(0,0,0);
 }
 header h1 {
+	font-size: 27px;
+	line-height: 60px;
+	font-weight: bold;
+
 	color: #ffffff;
 	text-align: center;
 	padding-left: 0;
 	display: block;
+	visibility: visible;
 }
 .burger {display: block;}
 
