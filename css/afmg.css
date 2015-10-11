@@ -1,46 +1,164 @@
+
+
+/* Center
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.center-horizontal
+{
+  /* AMAZING CODE TO CENTER VERTICAL*/
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.center-vertical
+{
+  vertical-align: middle;
+  line-height: 6rem;
+}
+
+.center
+{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  vertical-align: middle;
+  line-height: 6rem;
+}
+
+
 body
 {
-  margin: 0px 0px;
-  background-color: #f3f5f6;
+  background-color: #EFF1EE;
+  height: 100%;
 }
 
-nav ul
+
+/* Nav
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+nav
 {
-	float: right;
+  position: fixed;
+  width: 100vw;
+  background-color: white;
+  height: 6rem;
+  z-index: 100;
 }
 
-.slide.open #links
+#nav-logo, #nav-links
 {
+  position: relative;
   float: left;
+  height: 100%;
 }
 
-.header-section
+#nav-links
+{
+  float: right;
+}
+
+#nav-links li
+{
+  height: inherit;
+  position: relative;
+  float: right;
+  margin-left: 4rem;
+  display: inline-block;
+}
+
+
+/* Nave hover
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+*, *:before, *:after
+{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+nav li:after {
+  content: '';
+  height: 1px;
+  bottom: 1.5rem;
+  position: absolute;
+  left: 50%;
+  width: 0;
+  transition: 0.3s all ease-in-out;
+  background: #000;
+}
+nav li:hover:after {
+  width: 100%;
+  left: 0;
+  background: #20b2aa;
+}
+
+nav li {
+  display: inline-block;
+  color: #000;
+  transition: 0.3s all ease-in-out;
+}
+nav li:hover {
+  color: #20b2aa;
+}
+
+/* Fixed header
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+header
 {
   background-image: url("../img/bg_placeholder.jpg");
   background-size: cover;
-  background-blend-mode: multiply;
+  background-blend-mode: overlay;
   text-align: center;
   background-color: #f3f5f6;
 }
 
-.header
+#header-image
 {
   height: 100vh;
-}
-
-.header h1
-{
-  position: absolute;
-  top: 50%;
-	color: #9aa6af;
-	text-align: center;
-  font-size: 3rem;
-	line-height: 60px;
-	font-weight: bold;
   width: 100%;
 }
 
-.body-section
+#header-text
 {
-  background-color: #FFF;
+  width: inherit;
+  position: absolute;
+  top: 40%;
+  text-align: center;
+}
+
+header h1
+{
+  font-weight: bold;
+}
+
+/* Featured work
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.featured-work
+{
+  padding-top: 4rem;
+  color: #EFF1EE;
+}
+#featured-work-one, #main-featured-work
+{
+  background-color: #323F59;
+}
+
+/* 16x10 imgs
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#image-mask {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 56.2% 0 0 0;
+}
+#image-mask img {
+    display: block;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }

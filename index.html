@@ -2,73 +2,118 @@
 <html lang="en">
 <head>
 
-<title>AFMG</title>
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Afmg</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-<meta charset="utf-8">
-<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="HandheldFriendly" content="True">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Style Sheets -->
-<link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
-<link rel="stylesheet" type="text/css" media="all" href="css/trunk.css" />
-<link rel="stylesheet" type="text/css" media="all" href="css/afmg.css" />
-<link rel="shortcut icon" href="favicon.ico" >
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
 
-<!-- Scripts -->
-<script type="text/javascript">
-	if (typeof jQuery == 'undefined')
-		document.write(unescape("%3Cscript src='js/jquery-1.9.js'" +
-															"type='text/javascript'%3E%3C/script%3E"))
-</script>
-<script type="text/javascript" language="javascript" src="js/trunk.js"></script>
-<!--[if lt IE 9]>
-<script src="js/html5shiv.js"></script>
-<![endif]-->
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/afmg.css">
 
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="img/favicon.ico">
+
+  <!-- Jquery
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 </head>
-
 <body>
 
-<div class="container">
-	<nav class="slide">
-		<h1>Afmg</h1>
-		<ul id ="links">
-			<!--<li><a href="../trunk.html" class="active">HOME</a></li>-->
-			<li><a href="#">LINK TWO</a></li>
-			<li><a href="#">LINK THREE</a></li>
-		</ul>
-	</nav>
+  <nav>
+    <div class="container row">
+      <div class="twelve columns">
+        <div id="nav-logo">
+          <h4 class="center-vertical">Afmg</h4>
+        </div>
+        <div id="nav-links">
+          <ul>
+            <li class="center"> Contact</li>
+            <li class="center"> About  </li>
+            <li class="center"> Work   </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
 
-	<header class="slide">     <!--Add "slideRight" class to items that move right when viewing Nav Drawer-->
-		<ul id="navToggle" class="burger slide">    <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
-			<li></li><li></li><li></li>
-		</ul>
+  <header>
+      <div id="header-image">
+        <div id="header-text">
+          <h2>Hello I'm Andreia!</h2>
+          <h6>and I'm a Graphic Designer and Programmer</h6>
+        </div>
+      </div>
+  </header>
 
-		<h1>Afmg</h1>
-	</header>
+  <section id="main-featured-work" class="featured-work">
+    <div class="container">
+    <h4 class="twelve columns">What I've been working on </h4>
+    </div>
+  </section>
 
-	<div class="content slide">     <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
-		<ul class="responsive">
-			<li class="header-section">
-				<div class="header">
-					<h1>HEADER</h1>
-				</div>
+  <section id="featured-work-one" class="featured-work">
+    <div class="container">
+      <h5 class="twelve columns">Project 1 </h5>
+      <div class="row">
+        <div class="twelve columns">
+            <div id="featured-work-text" class="one-half column">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in libero sem.
+                Vestibulum quis ornare est, ac malesuada elit. Suspendisse dapibus non nisi sed hendrerit.
+                Aliquam eu lorem eu est aliquet sagittis. Duis nisi lacus, vehicula ut est nec, convallis aliquam orci.
+                Aenean eget lorem consectetur, mattis nulla ac, convallis enim. Proin blandit sem non mi bibendum, bibendum
+                posuere nunc hendrerit. Sed rhoncus eleifend est id laoreet.
+              </p>
+              <br>
+              <p>
+                bla bla bla
+              </p>
+            </div>
 
-			</li>
-			<li class="body-section">
-				<p class="placefiller">BODY</p>
-			</li>
-			<li class="footer-section">
-				<p class="placefiller">FOOTER</p>
-			</li>
-		</ul>
-	</div>
-
-</div>
+            <div id="featured-work-image" class="one-half column">
+              <div id="image-mask">
+                <img src="img/bg_placeholder.jpg" >
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!--
+  <div class="container">
+
+    <div class="row">
+      <div class="one-half column" style="margin-top: 25%">
+        <h4>What I've been working on</h4>
+
+        <p>This index.html page is a placeholder with the CSS, font and favicon.
+        It's just waiting for you to add some content! If you need some help hit up
+        the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
+      </div>
+    </div>
+  </div>
+
+  -->
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>
