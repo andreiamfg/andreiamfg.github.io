@@ -30,6 +30,7 @@ body
 {
   background-color: #EFF1EE;
   height: 100%;
+  -webkit-font-smoothing: antialiased;
 }
 
 
@@ -56,17 +57,17 @@ nav
   float: right;
 }
 
-#nav-links li
+#nav-links li, #contact-links li
 {
   height: inherit;
   position: relative;
   float: right;
-  margin-left: 4rem;
+  margin-left: 2rem;
   display: inline-block;
 }
 
 
-/* Nave hover
+/* Nav hover
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 *, *:before, *:after
 {
@@ -75,7 +76,7 @@ nav
   box-sizing: border-box;
 }
 
-nav li:after {
+.link:after {
   content: '';
   height: 1px;
   bottom: 1.5rem;
@@ -85,18 +86,18 @@ nav li:after {
   transition: 0.3s all ease-in-out;
   background: #000;
 }
-nav li:hover:after {
+.link:hover:after {
   width: 100%;
   left: 0;
   background: #20b2aa;
 }
 
-nav li {
+.link {
   display: inline-block;
   color: #000;
   transition: 0.3s all ease-in-out;
 }
-nav li:hover {
+.link:hover {
   color: #20b2aa;
 }
 
@@ -135,15 +136,47 @@ header h1
 
 .featured-work
 {
+  font-size: 1.8rem;
   padding-top: 4rem;
+  padding-bottom: 2rem;
   color: #EFF1EE;
 }
 #featured-work-one, #main-featured-work
 {
-  background-color: #323F59;
+  background-color: #FF6161;
 }
 
-/* 16x10 imgs
+#featured-work-two
+{
+  background-color: #289B94;
+}
+#featured-work-three
+{
+  background-color: #EC6548;
+}
+
+#main-about
+{
+  background-color: #555555;
+}
+
+#main-contact
+{
+  background-color: #3A4848;
+}
+
+
+#contact-links
+{
+  width: 100%;
+}
+
+#contact-links li
+{
+  float: left;
+}
+
+/* 16x9 imgs
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #image-mask {
     display: block;
