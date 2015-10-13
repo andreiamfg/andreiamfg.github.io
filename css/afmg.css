@@ -1,5 +1,10 @@
 @import url(http://weloveiconfonts.com/api/?family=entypo);
 
+*:focus
+{
+  outline: none;
+}
+
 /* entypo */
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
