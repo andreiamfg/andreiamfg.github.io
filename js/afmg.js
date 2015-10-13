@@ -20,13 +20,13 @@ $(document).ready( function()
       if (st > lastScrollTop)
       {
         //Hide nav
-        $("nav").animate({top:-100}, 10);
+        $("nav").animate({top:-100}, 100);
 
       }
       else
       {
         // Show nav
-        $("nav").animate({top:0}, 10);
+        $("nav").animate({top:0}, 100);
       }
       lastScrollTop = st;
     });

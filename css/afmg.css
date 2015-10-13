@@ -1,3 +1,4 @@
+/* Entypo pictograms by Daniel Bruce — www.entypo.com */
 @import url(http://weloveiconfonts.com/api/?family=entypo);
 
 /* General
@@ -111,14 +112,27 @@ nav
   background-color: white;
   height: 6rem;
   z-index: 100;
-  -webkit-transition: all 0.3s;
+  /*-webkit-transition: all 0.3s;*/
 }
 
-#nav-logo, #nav-links
+#nav-icon, #nav-logo, #nav-links
 {
   position: relative;
   float: left;
   height: 100%;
+}
+
+#nav-icon img
+{
+  margin-top: 1rem;
+  height: 4rem;
+  width: auto;
+  -webkit-transition:0.2s;
+}
+
+#nav-icon img:hover
+{
+  opacity: 0.5;
 }
 
 #nav-links
@@ -354,4 +368,19 @@ header h1
 .box-button
 {
   margin-top: 4rem;
+}
+
+.desktop-br
+{
+  display: none;
+  visibility: hidden;
+}
+
+@media (min-width: 1000px)
+{
+  .desktop-br
+  {
+    display: block;
+    visibility: visible;
+  }
 }
