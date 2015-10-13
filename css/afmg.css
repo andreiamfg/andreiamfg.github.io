@@ -365,6 +365,7 @@ header h1
 
 #league-btn1:hover, #league-btn2:hover
 {
+  /**/
   color: #379F7A;
   background-color: #FFF;
   border-color: #FFF;
