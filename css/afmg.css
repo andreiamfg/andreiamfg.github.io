@@ -263,6 +263,7 @@ header h1
 
 #contact-links li
 {
+  font-size: 3rem;
   float: left;
   margin-left: 1rem;
   margin-right: 1rem;
