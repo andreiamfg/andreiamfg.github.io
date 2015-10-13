@@ -1,4 +1,20 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
 
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+  font-size: 2em;
+}
+
+[class*="entypo-"]:hover{
+  color:#379F7A;/*#94c2cf*/
+  cursor:pointer;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
 
 /* Center
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -25,11 +41,16 @@
   line-height: 6rem;
 }
 
-
+html
+{
+  height: 100%;
+  width: 100%;
+}
 body
 {
   background-color: #EFF1EE;
   height: 100%;
+  width: 100%;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -89,7 +110,7 @@ nav
 .link:hover:after {
   width: 100%;
   left: 0;
-  background: #20b2aa;
+  background: #379F7A;
 }
 
 .link {
@@ -98,7 +119,7 @@ nav
   transition: 0.3s all ease-in-out;
 }
 .link:hover {
-  color: #20b2aa;
+  color: #379F7A;
 }
 
 /* Fixed header
@@ -138,37 +159,51 @@ header h1
 {
   font-size: 1.8rem;
   padding-top: 4rem;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
   color: #EFF1EE;
 }
+
+#main-featured-work
+{
+  padding-bottom: 1rem;
+}
+
 #featured-work-one, #main-featured-work
 {
-  background-color: #FF6161;
+  background-color: #1e2931; /*#FF6161; pink*/
 }
 
 #featured-work-two
 {
-  background-color: #289B94;
+  background-color: #1b2428;
+  /*#289B94; blue */
 }
 #featured-work-three
 {
-  background-color: #EC6548;
+  background-color: #171717; /*#EC6548; orange*/
+}
+
+#featured-work-four
+{
+  background-color: #379F7A;
 }
 
 #main-about
 {
-  background-color: #555555;
+  background-color: #F3F7FA;
+  color: #1a1a1a;
 }
 
 #main-contact
 {
-  background-color: #3A4848;
+  background-color: #1a1a1a;
 }
-
 
 #contact-links
 {
-  width: 100%;
+  width: 80%;
+  height: 100%;
+  margin: auto;
 }
 
 #contact-links li
@@ -184,7 +219,7 @@ header h1
     height: auto;
     position: relative;
     overflow: hidden;
-    padding: 56.2% 0 0 0;
+    padding: 62.5% 0 0 0;
 }
 #image-mask img {
     display: block;
@@ -194,4 +229,56 @@ header h1
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+/* Tags
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.tags
+{
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+}
+
+.project-title
+{
+  font-weight: 700;
+}
+
+
+/* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.box {
+  min-width: 60%;
+  position:relative;
+  vertical-align: middle;
+  color: #E3DEE2;
+  display: inline-block;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  transition: 0.5s;
+  padding: 0 20px;
+  cursor: pointer;
+  border: 2px solid #E3DEE2;
+  border-radius: 4px;
+  -webkit-transition:0.5s;
+  margin-left: 20%;
+}
+
+.box:hover {
+  border: 2px solid rgba(0,160,80,0);
+  color: #FFF;
+  background-color: #379F7A;
+}
+
+.box-button
+{
+  margin-top: 4rem;
+}
+
+ul a {
+    color: inherit;
+    text-decoration: none;
 }

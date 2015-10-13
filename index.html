@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/afmg.css">
+  <link rel="stylesheet" href="css/skills.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -30,6 +31,7 @@
   <!-- Jquery
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src='js/afmg.js'></script>
 
 </head>
 <body>
@@ -68,52 +70,57 @@
 
   <section id="featured-work-one" class="featured-work">
     <div class="container">
-      <h5 class="twelve columns">Project 1 </h5>
+      <h5 class="twelve columns project-title">Rawr (Unity C#) </h5>
       <div class="row">
         <div class="twelve columns">
             <div id="featured-work-text" class="one-half column">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in libero sem.
-                Vestibulum quis ornare est, ac malesuada elit. Suspendisse dapibus non nisi sed hendrerit.
-                Aliquam eu lorem eu est aliquet sagittis. Duis nisi lacus, vehicula ut est nec, convallis aliquam orci.
-                Aenean eget lorem consectetur, mattis nulla ac, convallis enim. Proin blandit sem non mi bibendum, bibendum
-                posuere nunc hendrerit. Sed rhoncus eleifend est id laoreet.
+              <p>Rawr is a One-screen beat ’em up game where 2 players play as small
+                vikings sharing one huge special sword to survive through waves of enemies.
+              </p>
+              <p>
+
               </p>
               <br>
-              <p>
-                bla bla bla
+              <p class="tags">
+                Unity | C# | Gui | Concept Art | Gameplay
               </p>
+
             </div>
 
             <div id="featured-work-image" class="one-half column">
               <div id="image-mask">
-                <img src="img/bg_placeholder.jpg" >
+                <img src="img/rawr.png" >
               </div>
             </div>
         </div>
+        <div class="box-button one-third column offset-by-one-third">
+          <div class='box'>
+            More
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
   <section id="featured-work-two" class="featured-work">
     <div class="container">
-      <h5 class="twelve columns">Project 1 </h5>
+      <h5 class="twelve columns project-title">Media Player </h5>
       <div class="row">
         <div class="twelve columns">
           <div id="featured-work-image" class="one-half column">
             <div id="image-mask">
-              <img src="img/bg_placeholder.jpg" >
+              <img src="img/mp_hybrid.png" >
             </div>
           </div>
           <div id="featured-work-text" class="one-half column">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in libero sem.
-              Vestibulum quis ornare est, ac malesuada elit. Suspendisse dapibus non nisi sed hendrerit.
-              Aliquam eu lorem eu est aliquet sagittis. Duis nisi lacus, vehicula ut est nec, convallis aliquam orci.
-              Aenean eget lorem consectetur, mattis nulla ac, convallis enim. Proin blandit sem non mi bibendum, bibendum
-              posuere nunc hendrerit. Sed rhoncus eleifend est id laoreet.
+            <p>Hybrid Web App, tailored for native experience in multiple devices.
+              Along with responsive media queries, the project includes the use
+              of native apps with webviews much like other hybrid web apps such as Linkedin,...
             </p>
             <br>
-            <p>
-              bla bla bla
+            <p class="tags">
+              Html5 | Css3 | Jquery | Php | Json | UI
             </p>
           </div>
         </div>
@@ -123,26 +130,57 @@
 
   <section id="featured-work-three" class="featured-work">
     <div class="container">
-      <h5 class="twelve columns">Project 1 </h5>
+      <h5 class="twelve columns project-title">TIB </h5>
       <div class="row">
         <div class="twelve columns">
           <div id="featured-work-text" class="one-half column">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in libero sem.
-              Vestibulum quis ornare est, ac malesuada elit. Suspendisse dapibus non nisi sed hendrerit.
-              Aliquam eu lorem eu est aliquet sagittis. Duis nisi lacus, vehicula ut est nec, convallis aliquam orci.
-              Aenean eget lorem consectetur, mattis nulla ac, convallis enim. Proin blandit sem non mi bibendum, bibendum
-              posuere nunc hendrerit. Sed rhoncus eleifend est id laoreet.
+            <p>In a mystical land two spirits use their servants, the TiBlings,
+              in mock battles to decide who is the true ruler of the land.
+              Welcome to the world of TiB!
+            </p>
+            <p>
+              TiB is a 3v3 fast-paced moba, highly inspired by action games.
+              It’s meant for easy pick up and play and appeal to casual players.
             </p>
             <br>
-            <p>
-              bla bla bla
+            <p class="tags">
+              Unity | C# | Art Direction | UI | Programming
             </p>
           </div>
           <div id="featured-work-image" class="one-half column">
             <div id="image-mask">
-              <img src="img/bg_placeholder.jpg" >
+              <img src="img/tib.png" >
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="featured-work-four" class="featured-work">
+    <div class="container">
+      <h5 class="twelve columns project-title">THE LEAGUE</h5>
+      <div class="row">
+        <div class="twelve columns">
+
+          <div id="featured-work-image" class="one-half column">
+            <div id="image-mask">
+              <img src="img/theleague_logo.png" >
+            </div>
+          </div>
+
+          <div id="featured-work-text" class="one-half column">
+            <p>Android application that displays user data requested from Riot’s API.
+              Developed using Java, Async requests to REST, SqLite and widgets.
+            </p>
+            <p>
+              Includes a widget that displays summoner icon and deaths, wins and assists.
+            </p>
+            <p class="tags">
+              Android | Java | UI | Async + REST | Riot Api
+            </p>
+          </div>
+
         </div>
       </div>
     </div>
@@ -155,7 +193,7 @@
         <div class="twelve columns">
           <div id="featured-work-image" class="one-half column">
             <div id="image-mask">
-              <img src="img/bg_placeholder.jpg" >
+              <img src="img/me.png" >
             </div>
           </div>
           <div id="featured-work-text" class="one-half column">
@@ -165,11 +203,59 @@
               Aenean eget lorem consectetur, mattis nulla ac, convallis enim. Proin blandit sem non mi bibendum, bibendum
               posuere nunc hendrerit. Sed rhoncus eleifend est id laoreet.
             </p>
-            <br>
-            <p>
-              bla bla bla
-            </p>
           </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <h5 class="twelve columns"> Skills </h5>
+        <div id="visual-skills" class="one-half column">
+          <ul class="skills-bar-container">
+            <label>Photoshop</label>
+            <li>
+              <span class="progressbar progressblue" id="progress-html"></span>
+            </li>
+            <label>Illustrator</label>
+            <li>
+              <span class="progressbar progressblue" id="progress-css"></span>
+            </li>
+            <label>InDesign</label>
+            <li>
+              <span class="progressbar progressblue" id="progress-javascript"></span>
+            </li>
+            <label>After Effects</label>
+              <li>
+                <span class="progressbar progressblue" id="progress-php"></span>
+              </li>
+            <label>Html5 / Css3</label>
+            <li>
+              <span class="progressbar progressblue" id="progress-angular"></span>
+            </li>
+          </ul>
+        </div>
+        <div class="one-half column">
+          <ul class="skills-bar-container">
+            <label>Javascript / Jquery </label>
+            <li>
+              <span class="progressbar progressblue" id="progress-angular"></span>
+            </li>
+            <label>Unity</label>
+            <li>
+              <span class="progressbar progressblue" id="progress-html"></span>
+            </li>
+            <label>C#</label>
+            <li>
+              <span class="progressbar progressblue" id="progress-css"></span>
+            </li>
+            <label>Java / Android</label>
+            <li>
+              <span class="progressbar progressblue" id="progress-javascript"></span>
+            </li>
+            <label>Html5 / Css3</label>
+              <li>
+                <span class="progressbar progressblue" id="progress-php"></span>
+              </li>
+    			</ul>
         </div>
       </div>
     </div>
@@ -179,12 +265,18 @@
     <div class="container">
       <div class="row">
         <h5 class="twelve columns">Contact </h5>
-        <div id="contact-links" class="center-horizontal">
-          <ul >
+        <div id="contact-links" class="container">
+          <!-- <ul >
             <li class="link center">Email</li>
             <li class="link center">Behance</li>
             <li class="link center">Github</li>
             <li class="link center">Linkedin</li>
+          </ul> -->
+
+          <ul class="offset-by-four column">
+            <a target="_blank" href="https://www.behance.net/afmg"><li class="entypo-behance"></li></a>
+            <a target="_blank" href="https://www.linkedin.com/in/andreiafmg"><li class="entypo-linkedin-circled"></li></a>
+            <a target="_blank" href="https://github.com/andreiamfg"><li class="entypo-github-circled"></li></a>
           </ul>
         </div>
       </div>
