@@ -1,10 +1,58 @@
 @import url(http://weloveiconfonts.com/api/?family=entypo);
 
+/* General
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+html
+{
+  height: 100%;
+  width: 100%;
+}
+body
+{
+  background-color: #EFF1EE;
+  height: 100%;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+.hide
+{
+  display: none;
+  visibility: hidden;
+}
+
+
 *:focus
 {
   outline: none;
   color: #379F7A;
 }
+
+.no-select
+{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+a
+{
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: #379F7A;
+    text-decoration: none;
+}
+
+/* Icon font
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 /* entypo */
 [class*="entypo-"]:before {
@@ -27,9 +75,16 @@
 .center-horizontal
 {
   /* AMAZING CODE TO CENTER VERTICAL*/
-  align-items: center;
-  justify-content: center;
+
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+
 }
 
 .center-vertical
@@ -47,29 +102,6 @@
   line-height: 6rem;
 }
 
-html
-{
-  height: 100%;
-  width: 100%;
-}
-body
-{
-  background-color: #EFF1EE;
-  height: 100%;
-  width: 100%;
-  -webkit-font-smoothing: antialiased;
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-}
-.no-select {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-
 /* Nav
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 nav
@@ -79,6 +111,7 @@ nav
   background-color: white;
   height: 6rem;
   z-index: 100;
+  -webkit-transition: all 0.3s;
 }
 
 #nav-logo, #nav-links
@@ -291,7 +324,28 @@ header h1
   margin-left: 20%;
 }
 
-.box:hover {
+#resume-btn, #demoreel-btn
+{
+  color: #1a1a1a;
+  border-color: #1a1a1a;
+  min-width: 30%;
+  width:18rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/* Larger than mobile */
+@media (max-width: 500px)
+{
+  #resume-btn, #demoreel-btn
+  {
+    width:14rem;
+  }
+
+}
+
+
+.box:hover, #resume-btn:hover, #demoreel-btn:hover {
   border: 2px solid rgba(0,160,80,0);
   color: #FFF;
   background-color: #379F7A;
@@ -300,14 +354,4 @@ header h1
 .box-button
 {
   margin-top: 4rem;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #379F7A;
-    text-decoration: none;
 }

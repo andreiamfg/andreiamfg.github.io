@@ -1,3 +1,4 @@
+/*Based on http://codepen.io/ArnaudBalland/pen/PwgqMO */
 
 #visual-skills
 {
@@ -31,7 +32,6 @@
   font-weight: 300;
 }
 
-
 .progressbar{
   position:absolute;
   width:0%;
@@ -46,6 +46,36 @@
   animation-timing-function: ease-out;
 	-webkit-animation-fill-mode: both;
 	animation-fill-mode: both;
+
+  background-color: #379F7A;
+}
+
+#progress-ps{
+  -webkit-animation-name: progress-ps;
+  animation-name: progress-ps;
+  -webkit-animation-delay: .7s;
+  animation-delay: .7s;
+}
+
+#progress-ill{
+  -webkit-animation-name: progress-ill;
+  animation-name: progress-ill;
+  -webkit-animation-delay: .7s;
+  animation-delay: .7s;
+}
+
+#progress-ind{
+  -webkit-animation-name: progress-ind;
+  animation-name: progress-ind;
+  -webkit-animation-delay: .7s;
+  animation-delay: .7s;
+}
+
+#progress-ae{
+  -webkit-animation-name: progress-ae;
+  animation-name: progress-ae;
+  -webkit-animation-delay: .7s;
+  animation-delay: .7s;
 }
 
 #progress-html{
@@ -55,50 +85,71 @@
   animation-delay: .7s;
 }
 
-#progress-css{
-  -webkit-animation-name: progress-css;
-  animation-name: progress-css;
-  -webkit-animation-delay: 1.4s;
-  animation-delay: 1.4s;
+#progress-js{
+  -webkit-animation-name: progress-js;
+  animation-name: progress-js;
+  -webkit-animation-delay: .7s;
+  animation-delay: .7s;
 }
 
-#progress-javascript{
-  -webkit-animation-name: progress-javascript;
-  animation-name: progress-javascript;
-  -webkit-animation-delay: 2.1s;
-  animation-delay: 2.1s;
+#progress-unity{
+  -webkit-animation-name: progress-unity;
+  animation-name: progress-unity;
+  -webkit-animation-delay: .7s;
+  animation-delay: .7s;
+}
+
+#progress-csharp{
+  -webkit-animation-name: progress-csharp;
+  animation-name: progress-csharp;
+  -webkit-animation-delay: .7s;
+  animation-delay: .7s;
+}
+
+#progress-android{
+  -webkit-animation-name: progress-android;
+  animation-name: progress-android;
+  -webkit-animation-delay: .7s;
+  animation-delay: .7s;
 }
 
 #progress-php{
   -webkit-animation-name: progress-php;
   animation-name: progress-php;
-  -webkit-animation-delay: 2.8s;
-  animation-delay: 2.8s;
+  -webkit-animation-delay: .7s;
+  animation-delay: .7s;
 }
 
-#progress-angular{
-  -webkit-animation-name: progress-angular;
-  animation-name: progress-angular;
-  -webkit-animation-delay: 3.5s;
-  animation-delay: 3.5s;
-}
 
-.progressblue{ background-color: #379F7A; }
+@-webkit-keyframes progress-ps{0%{width: 0%;} 100%{ width: 100%;}}
+@-webkit-keyframes progress-ill{0%{width: 0%;} 100%{ width: 90%;}}
+@-webkit-keyframes progress-ind{0%{width: 0%;} 100%{ width: 80%;}}
+@-webkit-keyframes progress-ae{0%{width: 0%;} 100%{ width: 50%;}}
+@-webkit-keyframes progress-html{0%{width: 0%;} 100%{ width: 95%;}}
+@-webkit-keyframes progress-js{0%{width: 0%;} 100%{ width: 90%;}}
+@-webkit-keyframes progress-unity{0%{width: 0%;} 100%{ width: 95%;}}
+@-webkit-keyframes progress-csharp{0%{width: 0%;} 100%{ width: 80%;}}
+@-webkit-keyframes progress-android{0%{width: 0%;} 100%{ width: 75%;}}
+@-webkit-keyframes progress-php{0%{width: 0%;} 100%{ width: 40%;}}
 
-@-webkit-keyframes progress-html{0%{width: 0%;} 100%{ width: 100%;}}
-@-webkit-keyframes progress-css{0%{width: 0%;} 100%{ width: 90%;}}
-@-webkit-keyframes progress-javascript{0%{width: 0%;} 100%{ width: 70%;}}
-@-webkit-keyframes progress-php{0%{width: 0%;} 100%{ width: 55%;}}
-@-webkit-keyframes progress-angular{0%{width: 0%;} 100%{ width: 65%;}}
+@-moz-keyframes progress-ps{0%{width: 0%;} 100%{ width: 100%;}}
+@-moz-keyframes progress-ill{0%{width: 0%;} 100%{ width: 90%;}}
+@-moz-keyframes progress-ind{0%{width: 0%;} 100%{ width: 85%;}}
+@-moz-keyframes progress-ae{0%{width: 0%;} 100%{ width: 50%;}}
+@-moz-keyframes progress-html{0%{width: 0%;} 100%{ width: 95%;}}
+@-moz-keyframes progress-js{0%{width: 0%;} 100%{ width: 90%;}}
+@-moz-keyframes progress-unity{0%{width: 0%;} 100%{ width: 95%;}}
+@-moz-keyframes progress-csharp{0%{width: 0%;} 100%{ width: 80%;}}
+@-moz-keyframes progress-android{0%{width: 0%;} 100%{ width: 75%;}}
+@-moz-keyframes progress-php{0%{width: 0%;} 100%{ width: 40%;}}
 
-@-moz-keyframes progress-html{0%{width: 0%;} 100%{ width: 100%;}}
-@-moz-keyframes progress-css{0%{width: 0%;} 100%{ width: 90%;}}
-@-moz-keyframes progress-javascript{0%{width: 0%;} 100%{ width: 70%;}}
-@-moz-keyframes progress-php{0%{width: 0%;} 100%{ width: 55%;}}
-@-moz-keyframes progress-angular{0%{width: 0%;} 100%{ width: 65%;}}
-
-@keyframes progress-html{0%{width: 0%;} 100%{ width: 100%;}}
-@keyframes progress-css{0%{width: 0%;} 100%{ width: 90%;}}
-@keyframes progress-javascript{0%{width: 0%;} 100%{ width: 70%;}}
-@keyframes progress-php{0%{width: 0%;} 100%{ width: 55%;}}
-@keyframes progress-angular{0%{width: 0%;} 100%{ width: 65%;}}
+@keyframes progress-ps{0%{width: 0%;} 100%{ width: 100%;}}
+@keyframes progress-ill{0%{width: 0%;} 100%{ width: 90%;}}
+@keyframes progress-ind{0%{width: 0%;} 100%{ width: 85%;}}
+@keyframes progress-ae{0%{width: 0%;} 100%{ width: 50%;}}
+@keyframes progress-html{0%{width: 0%;} 100%{ width: 95%;}}
+@keyframes progress-js{0%{width: 0%;} 100%{ width: 90%;}}
+@keyframes progress-unity{0%{width: 0%;} 100%{ width: 95%;}}
+@keyframes progress-csharp{0%{width: 0%;} 100%{ width: 80%;}}
+@keyframes progress-android{0%{width: 0%;} 100%{ width: 75%;}}
+@keyframes progress-php{0%{width: 0%;} 100%{ width: 40%;}}
