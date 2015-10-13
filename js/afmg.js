@@ -1,8 +1,8 @@
 $(document).ready( function()
 {
-  $('#nav-contact').on('click touchstart', function() {goToDiv("#main-contact")});
-  $('#nav-about').on('click touchstart', function() {goToDiv("#main-about")});
-  $('#nav-work').on('click touchstart', function() {goToDiv("#main-featured-work")});
+  $('#nav-contact').on('touchstart click', function() {goToDiv("#main-contact")});
+  $('#nav-about').on('touchstart click', function() {goToDiv("#main-about")});
+  $('#nav-work').on('touchstart click', function() {goToDiv("#main-featured-work")});
 });
 
 function goToDiv(target)
