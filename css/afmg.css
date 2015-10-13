@@ -268,9 +268,10 @@ header h1
   margin-right: 1rem;
 }
 
-/* 16x9 imgs
+/* 16x10 imgs
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-#image-mask {
+#image-mask
+{
     display: block;
     width: 100%;
     height: auto;
@@ -278,7 +279,9 @@ header h1
     overflow: hidden;
     padding: 62.5% 0 0 0;
 }
-#image-mask img {
+
+#image-mask img
+{
     display: block;
     max-width: 100%;
     position: absolute;
@@ -353,11 +356,18 @@ header h1
 
 }
 
-
-.box:hover, #resume-btn:hover, #demoreel-btn:hover {
+.box:hover, #resume-btn:hover, #demoreel-btn:hover
+{
   border: 2px solid rgba(0,160,80,0);
   color: #FFF;
   background-color: #379F7A;
+}
+
+#league-btn1:hover, #league-btn2:hover
+{
+  color: #379F7A;
+  background-color: #FFF;
+  border-color: #FFF;
 }
 
 .box-button
