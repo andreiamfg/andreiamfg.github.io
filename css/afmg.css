@@ -51,6 +51,7 @@ html
 {
   height: 100%;
   width: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body
 {
@@ -264,6 +265,7 @@ header h1
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .box {
+
   min-width: 60%;
   position:relative;
   vertical-align: middle;
