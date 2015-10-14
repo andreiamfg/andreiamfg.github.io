@@ -375,12 +375,28 @@
 
             <a target="_blank" href="https://www.behance.net/afmg"><li class="icon-behance-1"></li></a>
             <a target="_blank" href="https://www.linkedin.com/in/andreiafmg"><li class="icon-linkedin-circled"></li></a>
-            <a target="_blank" href="https://github.com/andreiamfg"><li class="icon-mark-github""></li></a>
+            <a target="_blank" href="https://github.com/andreiamfg"><li class="icon-mark-github"></li></a>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
+<script>
+  function onVisibilityChange (el)
+  {
+    return function ()
+    {
+        console.log('visibility ' + isElementInViewport(el));
+    }
+}
+
+var handler = onVisibilityChange($('#visual-skills'));
+
+
+//jQuery
+$(window).on('DOMContentLoaded load resize scroll', handler);
+
+</script>
 </body>
 </html>
