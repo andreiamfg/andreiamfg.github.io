@@ -347,13 +347,23 @@ header h1
 }
 
 /* Larger than mobile */
-@media (max-width: 500px)
+@media (max-width: 400px)
 {
   .box, #resume-btn, #demoreel-btn
   {
     width:14rem;
   }
 
+  #nav-icon
+  {
+    position: absolute;
+    left: 0.3rem;
+  }
+
+  #nav-logo
+  {
+    display: none;
+  }
 }
 
 .box:hover, #resume-btn:hover, #demoreel-btn:hover
