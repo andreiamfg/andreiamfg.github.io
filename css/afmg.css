@@ -347,7 +347,7 @@ header h1
 }
 
 /* Larger than mobile */
-@media (max-width: 400px)
+@media (max-width: 450px)
 {
   .box, #resume-btn, #demoreel-btn
   {
@@ -364,6 +364,16 @@ header h1
   {
     display: none;
   }
+
+  #nav-links li, #contact-links li
+  {
+    height: inherit;
+    position: relative;
+    float: right;
+    margin-left: 1rem;
+    display: inline-block;
+  }
+
 }
 
 .box:hover, #resume-btn:hover, #demoreel-btn:hover

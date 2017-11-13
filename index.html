@@ -384,22 +384,5 @@
       </div>
     </div>
   </section>
-
-<script>
-  function onVisibilityChange (el)
-  {
-    return function ()
-    {
-        console.log('visibility ' + isElementInViewport(el));
-    }
-}
-
-var handler = onVisibilityChange($('#visual-skills'));
-
-
-//jQuery
-$(window).on('DOMContentLoaded load resize scroll', handler);
-
-</script>
 </body>
 </html>

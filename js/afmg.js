@@ -58,3 +58,21 @@ function goToDiv(target)
       scrollTop: $(target).offset().top - 50},
       'slow');
 }
+
+function onVisibilityChange (el)
+{
+  return function ()
+  {
+      console.log('visibility ' + isElementInViewport(el));
+  }
+}
+
+function registerVisibilityChange()
+{
+  var handler = onVisibilityChange($('#visual-skills'));
+  
+  //jQuery
+  $(window).on('DOMContentLoaded load resize scroll', handler);
+}
+
+
