@@ -260,9 +260,9 @@ header h1
   margin: auto;
 }
 
-#contact-links li
+#contact-links i
 {
-  font-size: 3rem;
+  font-size: 2rem;
   float: left;
   margin-left: 1rem;
   margin-right: 1rem;
