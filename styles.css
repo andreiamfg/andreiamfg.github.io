@@ -42,13 +42,13 @@ nav {
 
 .back-btn {
   align-self: start;
-  margin-bottom: 5px;
-  padding: 4px 8px;
+  /* margin-bottom: 5px;
+  padding: 4px 8px; */
   background-color: transparent;
   color: #000000;
   border: none;
   cursor: pointer;
-  position: absolute;
+  /* position: absolute; */
 }
 
 .back-btn:hover {
@@ -97,9 +97,9 @@ iframe { border: none; }
 }
 
 .lightbox img {
-  max-width: 90%;
-  max-height: 80%;
-  /* border-radius: 2px; */
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
 }
 
 .close-lightbox {
@@ -118,9 +118,16 @@ footer {
   bottom: 0; */
 }
 
+#lightbox-content{
+  width: 80vw;
+  height: 80vh;
+  align-items: center;
+  text-align: center;
+}
+
 .arrow {
-  position: absolute;
-  top: 50%;
+  /* position: absolute;
+  top: 50%; */
   color: #d2d2d2;
   cursor: pointer;
   
@@ -128,13 +135,13 @@ footer {
   padding: 2em;
 }
 
-.left-arrow {
+/* .left-arrow {
   left: 20px;
 }
 
 .right-arrow {
   right: 20px;
-}
+} */
 
 .arrow:hover {
   color: #fff;

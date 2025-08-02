@@ -104,9 +104,11 @@
 
     <div class="lightbox hidden" id="lightbox" onclick="closeLightbox()">
         <span class="close-lightbox">&times;</span>
-        <span class="arrow left-arrow" onclick="changeImage(-1)">&#8592;</span>
+        <div id="lightbox-content">
         <img id="lightbox-image" src="" alt="">
+        <span class="arrow left-arrow" onclick="changeImage(-1)">&#8592;</span>
         <span class="arrow right-arrow" onclick="changeImage(1)">&#8594;</span>
+        </div>
     </div>
 
     <footer>
