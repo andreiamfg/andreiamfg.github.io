@@ -1,195 +1,165 @@
-html, body
-{
-    margin: 2em auto;
-    background-color: #1C1C1C;
-    color: #CFC6B5;
-    font-size: 16px;
-    line-height: 1.4;
-    font-kerning: normal;
-    font-weight: 200;
+/* img {
+  pointer-events: none;
+} */
+
+body {
+  font-family: 'Inter',Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1em;
+  opacity: 0;
+  transition: opacity 0.3s;
+  padding-top: 6em;
 }
 
-h1, h2, h3 {
-    letter-spacing: -0.01em;
-    color: #CFC6B5;
-    font-weight: 200;
-    line-height: 1.2;
-    font-size: 1.4em;
-}
-h1 {
-    padding-bottom: 1em; 
-}
-h2, h3 {
-    font-size: 1.2em;
+nav {
+  margin-top: 2em;
+  /* margin-bottom: 2em; */
 }
 
-h4 {
-    font-size: 0.8;
+.filter-button {
+  padding: 4px 8px;
+  margin: 5px;
+  border: none;
+  background-color: transparent;
+  color: #000000;
+  cursor: pointer;
 }
 
-body { 
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; 
-    width: 90%;
-    font-size: 1.4em;
+.filter-button:hover {
+  color: #a3a3a3;
 }
 
-.talks p{
-    font-size: 0.7em;
+.base-btn{
+  color: #000000;
 }
 
-a,
-a.visited {
-	color: inherit;
-    text-decoration: underline;
-}
-a:hover {
-    color: #fff;
-    fill: #fff;
+.base-btn:hover {
+  color: #a3a3a3;
 }
 
 
-.page {
-    padding-top: 10%;
-}
-
-.contact {
-    padding-top: 3em;
-}
-.contact-links {
-    padding-left: 0.2em;
-}
-.contact-links a {
-    padding-right: 1em;
-    font-size: 1.4em;
-}
-
-.disabled a{
-    color:#686051;
-    fill:lightgray;
-}
-
-.bottom-fade {
-    position : fixed;
-    z-index  : 1;
-    bottom   : 0;
-    left     : 0;
-    pointer-events   : none;
-    background-image : linear-gradient(to bottom, 
-                          rgba(255,255,255, 0), 
-                          #1C1C1C 90%);
-    width    : 100%;
-    height   : 4em;
-}
-
-.note {
-    padding-top: 4em;
-    padding-bottom: 0;
-    font-size: .7em;
-    color: #686051;
-    margin-bottom: 0;
-}
-
-/* Tooltip container */
-.tooltip {
-  position: relative;
-  display: inline-block;
-}
-
-/* Tooltip text */
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 7em;
-  background-color:#2D334A;
-  color: #FFFFFE;
-  text-align: center;
-  padding: 0.5em;
-  border-radius: 6px;
-  font-size: 0.7em;
- 
-  /* Position the tooltip text - see examples below! */
+.back-btn {
+  align-self: start;
+  margin-bottom: 5px;
+  padding: 4px 8px;
+  background-color: transparent;
+  color: #000000;
+  border: none;
+  cursor: pointer;
   position: absolute;
-  z-index: 1;
 }
 
-.tooltip-top {
-    bottom: 105%;
-    left: -3em;
-    margin-left: 0;
-}
-.tooltip-top::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #2D334A transparent transparent transparent;
-}
-
-/* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
-  visibility: visible;
+.back-btn:hover {
+  color: #a3a3a3;
 }
 
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+iframe { border: none; }
 
-    
+.tw-grid-item img
+{
+  transition: transform 0.3s;
+}
+.tw-grid-item:hover img
+{
+  transform: scale(1.01);
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
+#portfolio-container
+{
+  display: flex;
+  justify-content: center;
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    body {
-        width: 70%;
-        
-    }
-    .page {
-        padding-top: 2em;
-    }
-    .contact {
-        padding-top: 1em;
-    }
+.project-gallery img {
+  max-height: 38rem;
+  transition: transform 0.3s;
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    body {
-        width: 70%;
-        font-size: 1.4em;
-    }
-    .page {
-        padding-top: 15%;
-    }
-    h1 {
-        font-size: 2.5em;
-        padding-bottom: 0;
-        width: 80%;
-    }
-    .contact {
-        padding-top: 1em;
-    }
-    p {
-        width: 85%;
-        font-size: 1em;
-    }
-
-    
+.project-gallery img:hover {
+  transform: scale(1.01);
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    body {
-        width: 60%;
-        font-size: 1.2em;
-    }
-    .page {
-        padding-top: 1em;
-    }
+/* Lightbox styling */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  /* border-radius: 2px; */
+}
+
+.close-lightbox {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+footer {
+  padding: 2em;
+  text-align: center;
+  /* position:fixed;
+  bottom: 0; */
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  color: #d2d2d2;
+  cursor: pointer;
+  
+  /* background-color: rgba(0, 0, 0, 0.3); */
+  padding: 2em;
+}
+
+.left-arrow {
+  left: 20px;
+}
+
+.right-arrow {
+  right: 20px;
+}
+
+.arrow:hover {
+  color: #fff;
+}
+
+.basic-page {
+  max-width: 1000px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 64vh;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@layer utilities {
+  .animate-fadeIn {
+    animation: fadeIn 1s ease-out forwards;
+  }
 }

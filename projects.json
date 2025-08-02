@@ -1,0 +1,95 @@
+[
+  {
+      "title": "White Hair Zine",
+      "description": "A comic about someone finding their first white hair.",
+      "images": ["images/hair/p01-thumb.png", "images/hair/p01-01.png","images/hair/p01-02.png","images/hair/p01-03.png"],
+      "thumbnail": "images/hair/p01-thumb.png",
+      "category": "illustration"
+  },
+  {
+      "title": "Ghosts",
+      "description": "Illustrating anxious thoughts and feelings.",
+      "images": ["images/ghosts/img1.jpeg", "images/ghosts/img2.jpeg"],
+      "thumbnail": "images/ghosts/img1.jpeg",
+      "category": "illustration"
+  },
+  {
+      "title": "Plans Comic",
+      "images": ["images/comic-plans/plans_comic_img.png"],
+      "thumbnail": "images/comic-plans/plans-comic-thumb.png",
+      "category": "illustration"
+  },
+  {
+      "title": "All my friends... Comic",
+      "images": ["images/comic-friends/comic_02a-01.png", "images/comic-friends/comic_02a-02.png", "images/comic-friends/comic_02a-03.png"],
+      "thumbnail": "images/comic-friends/comic_02a-thumb.png",
+      "category": "illustration"
+  },
+  {
+      "title": "Flowers Game",
+      "description":"A little app to make your own flower illustrations. Playable in the browser.",
+      "images": ["images/flowers/flowers-02.png", "images/flowers/flowers-01.png"],
+      "thumbnail": "images/flowers/flowers-thumb.png",
+      "category": "games",
+      "linkText":"Play it here!",
+      "link": "https://attahh.itch.io/flowers"
+  },
+  {
+      "title": "Period Money",
+      "images": ["images/money/img1.png"],
+      "thumbnail": "images/money/img1.png",
+      "category": "illustration"
+  },
+  {
+      "title": "Azulejo Game",
+      "description":"A Sliding Tile Puzzle inspired in Portuguese Ceramic Tiles known as Azulejos.",
+      "description2":"I created the full game, including the creating the art inspired in existing portuguese tiles and designing the menus.",
+      "images": ["images/azulejo/azulejo-01.png","images/azulejo/azulejo-thumb.png"],
+      "thumbnail": "images/azulejo/azulejo-thumb.png",
+      "category": "games",
+      "linkText":"Play it here!",
+      "link":"https://attahh.itch.io/azulejo-hagj5"
+  },
+  {
+      "title": "My Collection App",
+      "description":"An interactive app to share the pros and cons of each menstruation product.",
+      "description2":"I designed and implemented the full app, including creating the 3D art for the products.",
+      "images": ["images/collection/img1.png","images/collection/img2.png"],
+      "thumbnail": "images/collection/img1.png",
+      "category": "games",
+      "linkText":"Try it here!",
+      "link": "https://attahh.itch.io/my-collection"
+  },
+  {
+      "title": "Mon Game",
+      "description":"A community pet simulator that everyone takes care of together.",
+      "description2":"I did the Design and some of the implementation for this game, as well as all the art.",
+      "images": ["images/mon/mon.png"],
+      "thumbnail": "images/mon/mon.png",
+      "category": "games",
+      "linkText":"Play it here!",
+      "link": "https://attahh.itch.io/mon"
+  },
+  {
+      "title": "Self Portraits",
+      "description":"Set of self portraits in oil pastel.",
+      "images": ["images/selfportraits/01.png","images/selfportraits/02.png"],
+      "thumbnail": "images/selfportraits/01.png",
+      "category": "illustration"
+  },
+  {
+      "title": "Self Portrait",
+      "description":"A self portrait in acrylic.",
+      "images": ["images/selfportraits/03b.png"],
+      "thumbnail": "images/selfportraits/03b.png",
+      "category": "illustration"
+  },
+  {
+      "title": "P for Period",
+      "description":"Concept for a book cover",
+      "images": ["images/period/img1.png"],
+      "thumbnail": "images/period/img1.png",
+      "category": "illustration"
+  }
+  
+]
